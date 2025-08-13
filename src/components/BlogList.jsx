@@ -24,7 +24,7 @@ const BlogList = () => {
   //   }, [menu]);
 
   return (
-    <div className="px-12">
+    <div className="mx-12">
       {/* Categories Button */}
       <div className="flex justify-center gap-6 my-10">
         {categories.map((btn) => (
@@ -44,7 +44,7 @@ const BlogList = () => {
         ))}
       </div>
 
-      <div className="flex flex-wrap justify-around gap-1 gap-y-10 mb-16 xl:mx-24">
+      <div className="flex flex-wrap justify-around gap-1  mb-16 xl:mx-24">
         {filteredBlogs().map((item, index) => {
           return (
             <BlogItem
