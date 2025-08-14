@@ -48,11 +48,12 @@ const BlogList = () => {
         {filteredBlogs().map((item, index) => {
           return (
             <BlogItem
+              key={index}
+              id={item.id}
               image={item.image}
               title={item.title}
               description={item.description}
               category={item.category}
-              key={index}
             />
           );
         })}
