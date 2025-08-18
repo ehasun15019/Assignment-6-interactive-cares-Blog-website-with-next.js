@@ -2,17 +2,20 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 import UserAuth from "./UserAuth";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <div className="py-5 px-5 md:px-12 lg:px-28">
       <div className="flex justify-between items-center">
-        <Image
-          src={assets.logo}
-          width={180}
-          alt="logo"
-          className="w-[130px] sm:w-auto"
-        />
+        <Link href="/">
+          <Image
+            src={assets.logo}
+            width={180}
+            alt="logo"
+            className="w-[130px] sm:w-auto"
+          />
+        </Link>
 
         <div className="flex gap-5 items-center">
           <button className="flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid border-black cursor-pointer shadow-[-7px_7px_0px_#000000]">
